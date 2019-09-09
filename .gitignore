@@ -339,3 +339,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/osx,node,sass,code,bower,grunt,linux,windows,laravel,dropbox,phpstorm,sublimetext,codeigniter
+
+app/

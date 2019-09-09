@@ -15,5 +15,24 @@
   "bugs": {
     "url": "https://github.com/morcegon/landing-page-boilerplate/issues"
   },
-  "homepage": "https://github.com/morcegon/landing-page-boilerplate#readme"
+  "homepage": "https://github.com/morcegon/landing-page-boilerplate#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "eslintConfig": {
+    "rules": {
+      "semi": 0
+    },
+    "env": {
+      "jquery": true,
+      "es6": true
+    }
+  },
+  "browserslist": [
+    "last 3 version",
+    "> 5%",
+    "not dead"
+  ]
 }
