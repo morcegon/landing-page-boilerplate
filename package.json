@@ -20,6 +20,7 @@
     "bulma": "^0.7.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
+    "gulp-browserify": "^0.5.1",
     "gulp-sass": "^4.0.2"
   },
   "eslintConfig": {
