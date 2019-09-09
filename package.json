@@ -1,0 +1,19 @@
+{
+  "name": "landing-page-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple landing page boilerplate",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morcegon/landing-page-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morcegon/landing-page-boilerplate/issues"
+  },
+  "homepage": "https://github.com/morcegon/landing-page-boilerplate#readme"
+}
