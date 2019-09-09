@@ -1,7 +1,8 @@
 const {
   src,
   dest,
-  parallel
+  parallel,
+  watch
 } = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
@@ -33,4 +34,12 @@ function copyFiles() {
     .pipe(dest(appPath))
 }
 
-exports.default = parallel(parseSass, copyFiles)
+function watchFiles() {
+  watch(srcStylePath + '/*.scss', parseSass)
+}
+
+exports.default = parallel(
+  parseSass, 
+  copyFiles,
+  watchFiles
+)
