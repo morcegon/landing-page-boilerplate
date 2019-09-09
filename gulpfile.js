@@ -6,9 +6,12 @@ const {
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 
-const srcStylePath = './src/scss'
+const srcPath = './src'
+const appPath = './app'
 
-const appStylePath = './app/css'
+const srcStylePath = srcPath + '/scss'
+
+const appStylePath = appPath + '/css'
 
 function parseSass() {
   return src(srcStylePath + '/*.scss')
@@ -21,4 +24,13 @@ function parseSass() {
     .pipe(dest(appStylePath))
 }
 
-exports.default = parallel(parseSass)
+function copyFiles() {
+  return src([
+    srcPath + '/index.html'
+  ], {
+    base: srcPath + '/'
+  })
+    .pipe(dest(appPath))
+}
+
+exports.default = parallel(parseSass, copyFiles)
